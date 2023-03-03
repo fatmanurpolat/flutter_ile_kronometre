@@ -10,6 +10,7 @@ class My_app extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp( 
       home: MyHome(),
+      debugShowCheckedModeBanner: false,
 
 
     );

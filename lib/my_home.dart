@@ -12,11 +12,15 @@ class _MyHomeState extends State<MyHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar( title: Text("kronometre"), backgroundColor: Color.fromARGB(255, 109, 50, 102),),
      body: SafeArea(//taşmaları önledi
        child: Column(children: [
-        Text("kronometre"),
+       
         Expanded(child: ListView(children: [],)),
-        Row(children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+          
           IconButton(onPressed: (){}, icon: Icon(Icons.play_arrow)),
           IconButton(onPressed: (){}, icon: Icon(Icons.stop)),
           IconButton(onPressed: (){}, icon: Icon(Icons.flag)),
