@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 
@@ -9,6 +11,17 @@ class MyHome extends StatefulWidget {
 }
 
 class _MyHomeState extends State<MyHome> {
+  Timer? timer;
+  Duration duration =Duration.zero;
+  List<Duration> laps = [];
+  add(Duration dur){
+    laps.add(dur);
+  }
+
+  start(){}
+  psuse(){}
+  stop(){}
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +31,7 @@ class _MyHomeState extends State<MyHome> {
        
         Expanded(child: ListView(children: [],)),
         Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
           
           IconButton(onPressed: (){}, icon: Icon(Icons.play_arrow)),
